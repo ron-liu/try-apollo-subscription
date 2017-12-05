@@ -9,6 +9,8 @@ RUN npm config set registry "https://registry.npm.taobao.org"
 RUN npm install --production=false
 RUN npm run build
 
+EXPOSE 3001
+
 # start serving
 CMD [ "pm2-docker", "start", "pm2.json" ]
 
