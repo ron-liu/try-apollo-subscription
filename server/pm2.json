@@ -1,0 +1,9 @@
+{
+  "apps": [{
+    "name": "sunshine",
+    "script": "dist/index.js",
+    "env": {
+      "production": true
+    }
+  }]
+}

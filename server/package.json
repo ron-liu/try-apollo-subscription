@@ -5,6 +5,7 @@
   "license": "MIT",
   "dependencies": {
     "apollo-server-express": "^1.2.0",
+    "babel-polyfill": "^6.26.0",
     "body-parser": "^1.18.2",
     "cors": "^2.8.4",
     "express": "^4.16.2",
@@ -26,6 +27,7 @@
     ]
   },
   "scripts": {
-    "start": "babel-node ./index.js"
+    "start": "babel-node ./index.js",
+    "build": "rm -rf dist && babel ./ --out-dir dist --ignore node_modules,dist,Dockerfile,package.json --copy-files"
   }
 }

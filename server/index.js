@@ -8,6 +8,7 @@ import cors from 'cors';
 import { execute, subscribe } from 'graphql';
 import { createServer } from 'http';
 import { SubscriptionServer } from 'subscriptions-transport-ws';
+import 'babel-polyfill'
 
 import schema from './schema';
 
