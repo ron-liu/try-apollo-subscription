@@ -23,7 +23,7 @@ server.use('/graphql', bodyParser.json(), graphqlExpress({
 
 server.use('/graphiql', graphiqlExpress({
 	endpointURL: '/graphql',
-	subscriptionsEndpoint: `ws://localhost:${PORT}/subscriptions`
+	subscriptionsEndpoint: `wss://apollo.mashuo.io/subscriptions`
 }));
 
 // Wrap the Express server
